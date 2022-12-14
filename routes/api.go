@@ -30,9 +30,4 @@ func Build(e *echo.Echo) {
 
 	e.GET("/article/comment/:id", controllers.CommentIndex)
 	e.POST("/article/comment/:id", controllers.CommentPost)
-
-	e.GET("/article/:id", controllers.UserDetail)
-	e.POST("/article/:id/point", controllers.UserPoint)
-	e.POST("/article/:id/point/minus", controllers.UserPointMinus)
-	e.POST("/article/:id/process/status", controllers.UserProcessStatus)
 }
